@@ -7,8 +7,10 @@
     <title>Lucky Shrub</title>
   </head>
   <body>
+    <header>
+      <img src="/assets/Asset 1@3x.png" class="logo" alt="logo" />
+    </header>
     <nav>
-      <img src="/assets/luckyshrub.png" class="logo" alt="logo" />
       <ul class="nav-list">
         <li class="nav-link"><a href="/" class="nav__link-anchor">Home</a></li>
         <li class="nav-link">
@@ -18,51 +20,16 @@
           <a href="#services" class="nav__link-anchor">Our Services</a>
         </li>
         <li class="nav-link">
-          <a href="#contact" class="nav__link-anchor nav__link--anchor-primary"
-            >Contact Us</a
-          >
+          <a href="#contact" class="nav__link-anchor">Contact Us</a>
         </li>
       </ul>
     </nav>
-    <header>
-      <div class="header__container">
-        <div class="header__description">
-          <h1 class="header__description--title">
-            Welcome to <span class="green">Lucky Shrub</span>
-          </h1>
-          <p class="header__description--para">
-            Your oasis for garden design, maintenance, and plants. We specialize
-            in creating and caring for your outdoor paradise.
-          </p>
-        </div>
-        <figure class="header__img--wrapper">
-          <img class="hero__img" src="/assets/gardening.svg" alt="Hero Image" />
-        </figure>
-      </div>
-    </header>
     <main>
-      <section id="about">
-        <article>
-          <h2 class="about__title">About Us</h2>
-          <div class="about__description">
-            <div class="about__description--wrapper">
-              <p class="about__description--para">
-                Lucky Shrub is a medium-sized garden design firm located in
-                Tucson, Arizona. We specialize in garden design and creation,
-                maintenance, and landscaping. Our small plant nursery offers a
-                wide variety of indoor and outdoor plants.
-              </p>
-              <br />
-              <p class="about__description--para">
-                Founded by Jason and Maria, we are passionate about creating
-                oases that you can be proud of.
-              </p>
-            </div>
-            <figure class="about__img--wrapper">
-              <img class="about__img" src="/assets/garden1.jpg" alt="" />
-            </figure>
-          </div>
-        </article>
+      <section class="banner">
+        <div class="banner-content">
+          <h2>Welcome to Lucky Shrub</h2>
+          <p>Your oasis for garden design, maintenance, and plants</p>
+        </div>
       </section>
       <section id="services">
         <h2 class="service__title">Our Services</h2>
@@ -96,6 +63,30 @@
           </div>
         </div>
       </section>
+      <section id="about">
+        <article>
+          <h2 class="about__title">About Us</h2>
+          <div class="about__description">
+            <div class="about__description--wrapper">
+              <p class="about__description--para">
+                Lucky Shrub is a medium-sized garden design firm located in
+                Tucson, Arizona. We specialize in garden design and creation,
+                maintenance, and landscaping. Our small plant nursery offers a
+                wide variety of indoor and outdoor plants.
+              </p>
+              <br />
+              <p class="about__description--para">
+                Founded by Jason and Maria, we are passionate about creating
+                oases that you can be proud of.
+              </p>
+            </div>
+            <figure class="about__img--wrapper">
+              <img class="about__img" src="/assets/garden1.jpg" alt="" />
+            </figure>
+          </div>
+        </article>
+      </section>
+
       <section id="contact">
         <h2>Contact Us</h2>
         <p>
@@ -119,8 +110,12 @@
       </section>
     </main>
     <footer>
-      <img src="/assets/luckyshrub.png" alt="Lucky Shrub Logo" />
-      <p>&copy; 2023 Lucky Shrub</p>
+      <div>
+        <img src="/assets/luckyshrub.png" alt="Lucky Shrub Logo" />
+      </div>
+      <div class="footer__para--wrapper">
+        <p class="footer__para">&copy; 2023 Lucky Shrub</p>
+      </div>
     </footer>
   </body>
 </html>

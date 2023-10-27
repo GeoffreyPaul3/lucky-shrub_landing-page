@@ -20,6 +20,13 @@ a {
 
 /*NAVIGATION BAR*/
 
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+/*
 nav {
   height: 100px;
   width: 100%;
@@ -31,16 +38,23 @@ nav {
   padding: 0 12px;
 }
 
+*/
+
 .logo {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
 }
 
 .nav-list {
-  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  padding: 6px 18px;
+  background-color: #333;
+  border-radius: 14px;
 }
 
 .nav-link {
+  display: inline-block;
   list-style: none;
   margin: 0 8px;
   font-size: 14px;
@@ -48,26 +62,52 @@ nav {
 }
 
 .nav__link-anchor {
-  color: #498536;
+  color: #f8f7f7;
   transition: all 500ms;
 }
 
 .nav__link-anchor:hover {
-  color: #81cc2a;
+  color: #b32b2b;
 }
 
-.nav__link--anchor-primary {
-  background-color: #498536;
-  color: white;
-  padding: 6px 18px;
-  border-radius: 50px;
-  transition: all 300ms;
-}
+
 
 .nav__link--anchor-primary:hover {
   background-color: #81cc2a;
   color: white;
 }
+
+/* Banner styles */
+.banner {
+  background-image: url('/assets/garden5.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333; 
+  color: #fff; 
+  padding: 6px 18px; 
+  margin: 20px;
+  text-align: center;
+  border-radius: 20px; 
+  overflow: hidden; 
+}
+
+.banner-content {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px; 
+}
+
+.banner h2 {
+  font-size: 28px;
+}
+
+.banner p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
 
 /*HERO SECTION*/
 .header__container {
@@ -94,7 +134,7 @@ nav {
 }
 
 .green {
-  color: #498536;
+  color: #a33919;
 }
 
 .header__img--wrapper {
@@ -124,7 +164,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
   margin: 20px;
-  color: #498536;
+  color: #a33919;
 }
 
 .about__description {
@@ -133,7 +173,6 @@ nav {
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 20px;
 }
 
 .about__description--para {
@@ -170,7 +209,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
   margin: 20px;
-  color: #498536;
+  color: #a33919;
 }
 
 /* Style the service cards container */
@@ -200,7 +239,7 @@ nav {
 
 .service-card h3 {
   font-size: 18px;
-  color: #68b63e;
+  color: #a33919;
 }
 
 .service-card p {
@@ -221,7 +260,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
   margin: 20px;
-  color: #498536;
+  color: #a33919;
 }
 
 #contact p {
@@ -248,7 +287,7 @@ textarea {
 }
 
 button {
-  background-color:  #498536;
+  background-color:  #a33919;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -258,15 +297,29 @@ button {
 }
 
 button:hover {
-  background-color: #81cc2a;
+  background-color: #cf3d10;
 }
 
 /* Style the footer */
 footer {
-  text-align: center;
   padding: 10px;
   background-color: #333;
   color: #fff;
+  display: flex;
+}
+
+footer div {
+  flex: 1;
+}
+
+.footer__para {
+  text-align: center;
+}
+
+.footer__para--wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer img {
@@ -277,5 +330,9 @@ footer img {
 
 body {
     background-color: #ffffff;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
